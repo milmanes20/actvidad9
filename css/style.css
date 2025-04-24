@@ -1,0 +1,123 @@
+body {
+     margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    
+  }
+
+  .top-bar {
+    background-color: #1CD1B0;
+    color: #000;
+    padding: 5px 25px;
+    font-size: 15px;
+    margin: 0px;
+  }
+  header {
+    background-color: #00669F;
+    color: black;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;/*mantener box1 sin redimensionar*/
+    justify-content: center;
+    gap: 20px;
+    margin: 35px auto;
+    
+    /*max-width: 1000px;*/
+  }
+
+  .box1 {
+    background-color: white;
+    position: relative;
+    width: 280px;
+    /*height: 450px;*/ /*no declarar para que se ajuste al contenido del box1*/
+    border-radius: 10px;
+    overflow: hidden;
+    /*box-shadow: 0 2px 8px rgba(0,0,0,0.1);*/ /* agregar sombra a box1*/
+    
+    text-align: center;
+    /*border-style: solid;*/
+  }
+
+  .box2{
+    z-index: 10;
+  }
+  .box2 img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /*redimensionar imagen*/
+  
+    
+  }
+
+  .heart {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: red;
+    font-size: 20px;
+  }
+  
+  .box3 {
+    position: absolute;
+    left: 80px;
+    margin-top:-65px;   /*superponer imagen*/ 
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7)); /*agrega sombra a la imagen y no al box que lo contiene*/ 
+    
+
+  }
+
+  .box3 img {
+    width: 120px;
+    height: 120px;
+    border-radius: 90px;
+    /*border: 0px solid white;*/    
+    object-fit: cover; /*redimensionar imagen*/
+    
+
+  }
+
+  .box1 h3 {
+    margin: 80px 0 5px;
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style:normal;
+    font-weight: 400; /*define grosor de caracteres*/
+  }
+
+  .box1 p {
+    padding: 0 20px;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .box1 button {
+    margin: 15px 0 20px;
+    padding: 15px 35px;
+    background-color: #00669F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-weight: 250;
+  }
+
+  footer {
+    background-color: #00669F;
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 14px;
+    bottom: 0;
+    width: 100%;
+  }
