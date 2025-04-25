@@ -10,6 +10,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <!-- ****************************************************************************    -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="top-bar">Descuentos 20%</div>
@@ -19,25 +22,78 @@
      
   </header>
  <main>
-      <FORM>
-       <h1>Añadir Super!</h1>
-       <p>Agrega tu persona favorito completando las opciones</p>
-        <label for="nombre"> Nombre</label>
-        <input type="text" name="nombre" id="nombre">
-        <label for="especie">Especie</label>
-        <select name="especie" id="especie">
-            <option value="humano">Humano</option>
-            <option value="alien">Extraterrestre</option>
-            <option value="mutan">Mutante</option>
-            <option value="god">Dios</option>
-        </select>
-        <label for="fecha">Fecha</label>
-        <input type="date" name="fecha" id="fecha">
-        <label for="photo">Agregar foto</label>
-        <input type="file" name="photo" id="photo">
-        <textarea placeholder="Dscripción" name="description" id="description"></textarea>
 
-      </FORM>
+     <div class="form-contenedor">
+        
+        <FORM>
+            <h1>Añadir Super!</h1>
+        <p>Agrega tu persona favorito completando las opciones</p>
+            <div class="form-row">
+              <div>
+                <label for="nombre"> *Nombre</label>
+             <input type="text" name="nombre" id="nombre" required>
+              </div>  
+             <div>
+                <label for="especie">*Especie</label>
+                <select name="especie" id="especie" required>
+                   <option value=""></option>
+                    <option value="humano">Humano</option>
+                    <option value="alien">Extraterrestre</option>
+                    <option value="mutan">Mutante</option>
+                    <option value="god">Dios</option>
+                </select>
+             </div>
+             
+            </div>
+            <div class="form-row">
+             <div>
+                <label for="fecha">Fecha</label>
+                <input type="date" name="fecha" id="fecha">
+                
+             </div>
+             <div>
+                <label for="photo">Agregar foto</label>
+                <input type="file" name="photo" id="photo">
+        
+             </div>
+             
+     
+            </div>
+             
+             <div class="form-row">
+                <div>
+                    <textarea placeholder="Dscripción" name="description" id="description"></textarea>
+                   
+                </div>
+                <div>
+                    <div class="checkbox-group">
+                        <label for="poder">Poderes</label>
+                        <label ><input type="checkbox" name="poder" id="poder" value="volar"> Volar</label> 
+                        <label ><input type="checkbox" name="poder" id="poder" value="Superinteligencia">Superinteligencia </label>
+                        <label ><input type="checkbox" name="poder" id="poder" value="billetera gorda">Billetera gorda </label>
+                        <label ><input type="checkbox" name="poder" id="poder" value="vista de rayos layer">Vista rayos laser</label>
+                        
+    
+                    </div>
+                    <hr>
+                    <div class="radio-group">
+                        <label for="personaje">Tipo de personaje</label>
+                         <label ><input type="radio" name="personaje" id="personaje">Héroe / Heroina</label>
+                         <label ><input type="radio" name="personaje" id="personaje"> Villano / Villana </label>
+            
+                    </div>
+
+                </div>
+                
+                
+
+             </div>
+             
+             <button type="submit">Añadir</button>
+           </FORM>
+
+    </div>
+     
 
   
 
